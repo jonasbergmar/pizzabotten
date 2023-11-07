@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <title>Pizzabot</title>
+  </head>
+  <body>
+    <div class="bgImage">
+      <div class="container">
+        <form id="frm1" action="/action_page.php">
+          <h1>
+            Welcome!<br />
+            We offer 3 different pizzas: Vegetarian Pizza, Hawaiian Pizza, and
+            Pepperoni Pizza.
+          </h1>
+          <div class="pizzaChoice">
+            <label for="choosePizza">Choose Pizza</label>
+            <select
+              name="choosePizza"
+              id="choosePizza"
+              required
+              onchange="validatePizzaChoice()"
+            >
+              <option value="" disabled selected>Select your option</option>
+              <option class="option" value="Vegetarian">
+                Vegetarian Pizza
+              </option>
+              <option class="option" value="Hawaiian">Hawaiian Pizza</option>
+              <option class="option" value="Pepperoni">Pepperoni Pizza</option>
+            </select>
+            <label for="">Your pizza of choice</label
+            ><input type="text" id="pizzaResult" disabled />
+          </div>
+          <div class="pizzaQuantity">
+            <label for="chooseQuantity">How many pizzas?</label>
+            <input
+              type="number"
+              name="chooseQuantity"
+              id="chooseQuantity"
+              oninput="calculateCookingTime()"
+            />
+            <label for="">Cooking time</label
+            ><input type="text" id="cookingTimeResult" disabled />
+          </div>
+          <div class="totalCost">
+            <label for="">Total cost</label
+            ><input type="text" id="totalCostResult" disabled />
+            <input type="button" id="submitBtn" value="Submit" />
+          </div>
+          <dialog id="confirmationDialog">
+            <p id="dialogText"></p>
+            <button id="closeDialog">Close</button>
+          </dialog>
+        </form>
+      </div>
+    </div>
+
+    <script src="./pizzabothtml.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.bgImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(dylan-mullins-ykFYIojIbVw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional, to make the image fixed on the div */
+  background-position: center center;
+  height: 100vh; /* Make the background cover the full viewport height */
+}
+
+form {
+  max-width: 768px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 0.5 rem;
+  font-weight: 400;
+  width: 50%;
+  align-self: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  border-radius: 20px;
+  background-color: rgba(105, 105, 105, 0.932);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+input,
+select {
+  width: 200px;
+  margin: 20px;
+  align-self: center;
+  border-style: none;
+  border-radius: 20px;
+  padding: 10px 10px;
+  border: 2px solid whitesmoke;
+  color: black;
+}
+
+.option {
+  border-radius: 20px;
+}
+
+#submitBtn {
+  color: black;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.pizzaChoice {
+  display: flex;
+  flex-direction: column;
+}
+.pizzaQuantity {
+  display: flex;
+  flex-direction: column;
+}
+.totalCost {
+  display: flex;
+  flex-direction: column;
+}
+
+#confirmationDialog {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#closeDialog {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
